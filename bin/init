@@ -1,0 +1,33 @@
+#! /usr/bin/env node
+
+const program = require('commander');
+const inquirer = require('inquirer');
+const path = require('path');
+const createApp = require('../lib/createApp');
+
+const PROJECT_NAME = 'project-name';
+
+program
+  .usage('<project-name>')
+  .parse(process.argv);
+
+const questions = [
+  {
+    type: 'input',
+    name: PROJECT_NAME,
+    message: 'project Name:',
+    default: function() {
+      return path.basename(path.resolve('.'));
+    }
+  }
+];
+
+const projectName = program.args[0];
+
+if (projectName === undefined) {
+  inquirer.prompt(questions).then((answers) => {
+    createApp(path.join(process.cwd(), answers[PROJECT_NAME]));
+  });
+} else {
+  createApp(path.join(process.cwd(), projectName));
+}
