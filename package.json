@@ -1,13 +1,14 @@
 {
   "name": "mini-program-cli",
-  "version": "0.0.13",
+  "version": "0.0.19",
   "description": "A CLI for scaffolding mini-program projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "mini-ini": "bin/init"
+    "mini": "bin/mini",
+    "mini-init": "bin/init"
   },
   "author": "",
   "license": "ISC",
