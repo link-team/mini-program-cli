@@ -1,0 +1,11 @@
+<view class="container">
+  <card
+    thumb="{{thumb}}"
+    title="卡片标题"
+    subTitle="副标题非必填"
+    onClick="onCardClick"
+    footer="描述文字"
+    footerImg="{{footerImg}}"
+    info="dadadadadada"
+  />
+</view>

@@ -1,6 +1,6 @@
 {
   "name": "mini-program-cli",
-  "version": "0.0.23",
+  "version": "0.1.11",
   "description": "A CLI for scaffolding mini-program projects",
   "main": "index.js",
   "scripts": {
