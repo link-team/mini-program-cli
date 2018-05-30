@@ -1,6 +1,6 @@
 {
   "name": "mini-program-cli",
-  "version": "0.0.19",
+  "version": "0.0.23",
   "description": "A CLI for scaffolding mini-program projects",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,16 @@
     "mini": "bin/mini",
     "mini-init": "bin/init"
   },
-  "author": "",
+  "keywords": [
+    "mini-program",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phieo/mini-program-cli.git"
+  },
+  "author": "Phieo",
+  "homepage": "https://github.com/Phieo/mini-program-cli#readme",
   "license": "ISC",
   "dependencies": {
     "commander": "^2.15.1",
