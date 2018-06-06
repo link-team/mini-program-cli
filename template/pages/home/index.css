@@ -1,0 +1,10 @@
+@import '../../styles/vars.css';
+@import '../../styles/mixins/border.css';
+
+$regular-size: 16px;
+
+.container {
+  border: 1px solid  $black;
+  font-size: $regular-size;
+  @mixin border-radius 10px;
+}

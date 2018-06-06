@@ -6,4 +6,5 @@ const my = require('../package.json');
 program
   .version(my.version)
   .command('init', 'generate a new project')
+  .command('start', 'compile')
   .parse(process.argv);

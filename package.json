@@ -1,6 +1,6 @@
 {
   "name": "mini-program-cli",
-  "version": "0.1.26",
+  "version": "0.2.1",
   "description": "A CLI for scaffolding mini-program projects",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
   },
   "bin": {
     "mini": "bin/mini",
-    "mini-init": "bin/init"
+    "mini-init": "bin/init",
+    "mini-start": "bin/start"
   },
   "keywords": [
     "mini-program",
@@ -25,6 +26,14 @@
     "clui": "^0.3.6",
     "commander": "^2.15.1",
     "fs-extra": "^6.0.1",
-    "inquirer": "^5.2.0"
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.3",
+    "inquirer": "^5.2.0",
+    "postcss-import": "^11.1.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-scss": "^1.0.5",
+    "postcss-simple-vars": "^4.1.0"
   }
 }
