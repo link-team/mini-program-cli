@@ -7,6 +7,11 @@ $ npm install mini-program-cli -g
 $ mini init
 ```
 
+```bash
+# start compile sass to acss
+$ mini start
+```
+
 ## Project tree
 
 ```
