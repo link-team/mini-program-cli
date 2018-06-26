@@ -5,6 +5,7 @@ const inquirer = require('inquirer');
 const path = require('path');
 const createApp = require('../lib/createApp');
 
+const PROJECT_TYPE = 'project-type';
 const PROJECT_NAME = 'project-name';
 
 program
@@ -12,6 +13,12 @@ program
   .parse(process.argv);
 
 const questions = [
+  {
+    type: 'list',
+    name: PROJECT_TYPE,
+    message: 'select project type',
+    choices: [{ name: 'App', value: 0 }, { name: 'Component', value: 1 }]
+  },
   {
     type: 'input',
     name: PROJECT_NAME,
@@ -26,7 +33,7 @@ const projectName = program.args[0];
 
 if (projectName === undefined) {
   inquirer.prompt(questions).then((answers) => {
-    createApp(path.join(process.cwd(), answers[PROJECT_NAME]));
+    createApp(path.join(process.cwd(), answers[PROJECT_NAME]), answers[PROJECT_TYPE]);
   });
 } else {
   createApp(path.join(process.cwd(), projectName));

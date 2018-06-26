@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "src/demo/index"
+  ],
+  "window": {
+    "enableWK": "YES",
+    "enableDSL": "YES",
+    "enableJSC": "YES",
+    "defaultTitle": "mini-program",
+    "backgroundColor": "#F5F5F9",
+    "pullRefresh": false,
+    "allowsBounceVertical": true
+  },
+  "debug": true
+}

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "mini-demo",
+  "usingComponents": {
+    "demo": "../index"
+  }
+}
